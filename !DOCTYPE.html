@@ -4,81 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Players</title>
-    <style>
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        img {
-            max-width: 50px;
-            max-height: 50px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>NBA Players Information</h1>
+    <header>
+        <h1>Bienvenido a NBA Players</h1>
+        <p>Explora la información de los jugadores activos en la NBA, incluyendo sus puntos, rebotes, robos, tapones y más.</p>
+    </header>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Foto</th>
-                <th>Jugador</th>
-                <th>Puntos</th>
-                <th>Rebotes</th>
-                <th>Robos</th>
-                <th>Tapones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="lebron.jpg" alt="LeBron James"></td>
-                <td>LeBron James</td>
-                <td>25.0</td>
-                <td>8.0</td>
-                <td>1.5</td>
-                <td>1.0</td>
-            </tr>
-            <tr>
-                <td><img src="kawhi.jpg" alt="Kawhi Leonard"></td>
-                <td>Kawhi Leonard</td>
-                <td>27.5</td>
-                <td>7.2</td>
-                <td>2.0</td>
-                <td>0.8</td>
-            </tr>
-            <tr>
-                <td><img src="giannis.jpg" alt="Giannis Antetokounmpo"></td>
-                <td>Giannis Antetokounmpo</td>
-                <td>30.2</td>
-                <td>12.0</td>
-                <td>1.8</td>
-                <td>1.5</td>
-            </tr>
-            <tr>
-                <td><img src="steph.jpg" alt="Stephen Curry"></td>
-                <td>Stephen Curry</td>
-                <td>32.0</td>
-                <td>5.0</td>
-                <td>1.2</td>
-                <td>0.5</td>
-            </tr>
-            <!-- Agrega más filas con información de otros jugadores y sus fotos -->
-        </tbody>
-    </table>
+    <section id="search-section">
+        <h2>Buscar Jugadores</h2>
+        <form id="player-search-form">
+            <label for="player-search">Nombre del Jugador:</label>
+            <input type="text" id="player-search" placeholder="Buscar por nombre...">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section id="content-section">
+        <p>Dirígete a la página de <a href="players.html">jugadores</a> para ver la información detallada.</p>
+    </section>
+
+    <script src="search.js"></script>
 
 </body>
 </html>
